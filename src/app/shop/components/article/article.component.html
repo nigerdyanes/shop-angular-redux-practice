@@ -1,0 +1,9 @@
+<div class="card">
+    <img src="{{ article?.image }}" class="card-img-top" alt="{{ article?.desc }}">
+    <div class="card-body">
+        <h5 class="card-title">{{ article?.desc }}</h5>
+        <h6>{{ article?.price }}</h6>
+        <a class="btn btn-primary" (click)="addToCart(article)" >Add to cart</a>
+        <a class="btn btn-danger" (click)="removeCart(article)" >Remove to cart</a>
+    </div>
+</div>
